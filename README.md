@@ -1,4 +1,4 @@
-# Mini Blog - 
+# Mini Blog
 
 ## はじめに
 
