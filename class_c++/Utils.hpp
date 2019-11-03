@@ -1,5 +1,5 @@
-#ifndef INCLUDED_UTILS_H_
-#define INCLUDED_UTILS_H_
+#ifndef INCLUDED_UTILS_H
+#define INCLUDED_UTILS_H
 
 #include <iostream>
 #include "opencv2/opencv.hpp"

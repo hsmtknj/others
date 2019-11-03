@@ -1,5 +1,6 @@
 // ============================================================================
 // テンプレートクラスについてまとめる
+// イテレータ(iterator)も使ってみる
 // ============================================================================
 
 
@@ -43,11 +44,21 @@ int main()
     Human<double> DoubleHuman(25.5, 174.5, 62.5);
     std::cout << DoubleHuman.age << std::endl;
 
-    // 標準テンプレートライブラリの vector は便利
+    // 標準テンプレートライブラリ (STL: Standart Template Library) の vector は便利
     std::vector<double> v;
     v.push_back(1.5);
     v.push_back(3.9);
     std::cout << v[0] << std::endl;
     std::cout << v[1] << std::endl;
-}
 
+    // vector クラスの iterator を使ってみる
+    std::vector<double>::iterator itr_begin, itr_end, itr;
+    itr_begin = v.begin();
+    itr_end = v.end();
+
+    for (itr = itr_begin; itr != itr_end; itr++)
+    {
+        std::cout << *itr << std::endl;
+    }
+
+}
